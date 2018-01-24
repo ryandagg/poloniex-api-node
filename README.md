@@ -4,7 +4,7 @@ poloniex-api-node
 
 
 
-**poloniex-api-node** is a simple node.js wrapper for Poloniex REST and WebSocket API.
+**poloniex-api-js** is a simple js wrapper for Poloniex REST and WebSocket API. All credit to https://github.com/dutu/poloniex-api-node. I just made it work on the browser as well.
 
 REST API supports both Callback and Promise.
 
@@ -28,7 +28,7 @@ WebSocket API supports both the WAMP protocol (v1) and the new WebSocket API (v2
 
 # Install
 
-    npm install --save poloniex-api-node
+    npm install --save poloniex-api-js
 
 # Quick examples
 
@@ -41,7 +41,7 @@ WebSocket API supports both the WAMP protocol (v1) and the new WebSocket API (v2
 Example 1 (REST API using Callback):
 
 ```js
-const Poloniex = require('poloniex-api-node');
+const Poloniex = require('poloniex-api-js');
 let poloniex = new Poloniex();
 
 poloniex.returnTicker((err, ticker) => {
@@ -56,7 +56,7 @@ poloniex.returnTicker((err, ticker) => {
 Example 2 (REST API using Callback):
 
 ```js
-const Poloniex = require('poloniex-api-node');
+const Poloniex = require('poloniex-api-js');
 let poloniex = new Poloniex();
 
 poloniex.returnTicker(function (err, ticker) {
